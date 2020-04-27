@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="anahi reig mendoza">
+    <meta name="description" content="vook gallerie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vook</title>
+    <link rel="stylesheet" href="vook.css">
+    <style>
+
+        input[type=text], input[type=email], #mensaje {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .contact-container {
+            border-radius: 5px;
+	        height: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            background:  #6CB6E5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="topbar">
+            <a href="https://www.vimeo.com"><img src="img/logo_vimeo.png" alt="logo_vimeo_rrss" width="28" height="28" style="padding:5px"/></a>
+            <a href="https://www.instagram.com"><img src="img/logo_instagram.png" alt="logo_instagram" width="28" height="28" style="padding:5px"/></a>
+            <div id="user-button">
+                <a id="registry" href="register.html">REGISTER</a>
+                <a id="login" href="login.html">LOG IN</a>
+            </div>
+        </div>
+        <a id="logo-header" href="#"><img src="img/vook_logo.png" width="75" height="75"></a>
+        <div id="user-panel">
+            <a id="shop-location" href="shop_location.html"><img src="img/shop_location.png" alt="Shop location" width="68" height="68"></a>
+            <a id="shop-card" href="shop_card.html"><img src="img/shop_card.png" alt="Shop Card" width="68" height="68"></a>
+            <a id="account" href="account.html"><img src="img/account.png" alt="Account" width="68" height="68"></a>
+        </div>    
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><input list="search">
+                <datalist id="search">
+                    <option>VOOK 1</option>
+                    <option>VOOK 2</option>
+                    <option>VOOK 3</option>
+                    <option>VOOK 4</option>
+                </datalist>
+                <button type="submit">SEARCH</button>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <div class="contact-container">
+                <h2>CONTACT VOOK</h2>
+                <form id="contacto" action="mailto:anahireig@gmail.com" method="POST" autocomplete="off">
+                    <div>
+                        <label>Name:</label><br>
+                        <input type="text" id="nombre" name="nombre" size="20" required autofocus><br>
+                     </div>
+    
+                    <div>
+                        <label>Email:</label><br>
+                        <input type="email" id="correo" name="correo" size="20" required><br>
+                    </div>
+    
+                    <div>
+                        <label>Message:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="7" cols="30" required></textarea><br>
+                    </div>
+    
+                    <input id="enviar" type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </article>
+        <aside>
+            <iframe style="float: center; margin-bottom: 20px; border-radius: 5px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.5288157847!2d2.0787279470992464!3d41.39476881460054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1ses!2ses!4v1587676165612!5m2!1ses!2ses" width="980" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&#169; 2020 VOOK GALLERY <a id="webdesigner-footer" href="http://wwww.pistachedesign.com">| Dev & Webdesign by PISTACHE DESIGN</a></p>
+    </footer>
+
+</body>
+
+</html>

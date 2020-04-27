@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer, aside, nav, article {
+    display: block;
+}
+
+body {
+    width: 980px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 0 0 90px 0px;
+}
+
+#logo-header {
+    float: left;
+    text-decoration: none;
+}
+
+#user-button {
+    float: right;
+    margin-top: 15px;
+}
+
+#user-panel {
+    float: right;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a {
+    color: #6CB6E5;
+    text-decoration: none;
+}
+
+nav {
+    font: bold 14px sans-serif;
+    background-color: #fff;
+    border: 2px solid #6CB6E5;
+    border-radius: 5px;
+    padding: 5px 5px 10px 5px;
+    height: 24px; 
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px 15px 5px 10px;
+    border-right: 1px solid #6CB6E5;
+}
+
+nav ul li a {
+    color: #6CB6E5;
+    text-decoration: none;
+}
+
+input[list] {
+    border: 1px solid #6CB6E5;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    font: bold 26px sans-serif black;
+    border: 1px solid #666;
+    border-radius: 2px;
+    padding: 3px 6px 3px 6px;
+    margin: 0 5px 0 5px;
+}
+
+button {
+    font: bold 16px sans-serif black;
+    border: 1px solid #6CB6E5;
+    border-radius: 2px;
+    padding: 3px 6px 3px 6px;
+    margin: 0 5px 0 5px;
+}
+
+#registry {
+    font: bold 14px sans-serif;
+    border: 1px solid #6CB6E5;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#login {
+    font: bold 14px sans-serif;
+    border: 1px solid #666;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+    background-color: #666;
+    color: #fff;
+}
+
+.vook-gallery-container {
+    border-radius: 5px;
+	height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background:  #6CB6E5;
+}
+
+.row {
+	margin: auto;
+}
+
+.col-sm-4 {
+	display: inline-block;
+	margin: 10px 20px 20px 20px;
+    border-radius: 5px;
+	height: 300px;
+    width: 240px;
+    text-align: left;
+    background: white;
+}
+
+.vook-title {
+    font: bold 18px helvetica;
+    text-align: left;
+    color: #666;
+    padding: 5px 10px 5px 10px;
+}
+
+.vook-text-intro {
+    font: lighter 14px helvetica;
+    text-align: justify;
+    color: #666;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 15px;
+}
+
+.vook-detail {
+    font: bold 14px sans-serif;
+    color: #fff;
+    border: 1px solid #6CB6E5;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px 5px 5px 10px;
+    background: #6CB6E5;
+}
+
+#gallery-control-bar {
+    text-align: center;
+}
+
+.vook-loved-selection {
+    border: 2px solid #6CB6E5;
+    border-radius: 5px;
+	height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vook-gallery-filter {
+    border: 2px solid #6CB6E5;
+    border-radius: 5px;
+	height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #6CB6E5;
+    width: 970px;
+    margin: 0px auto;
+    color: #fff;
+    padding: 10px 5px 5px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#webdesigner-footer {
+    font: bold 12px sans-serif;
+    color: #fff;
+}
