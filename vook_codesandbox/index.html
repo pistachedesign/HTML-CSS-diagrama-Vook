@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vook Boot Web</title>
+	<meta charset="utf-8">
+	<meta name="author" content="anahi reig mendoza">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<style>
+		.carousel-indicators li {
+			height:30px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+	<!------------------------------- EMPIEZA EL CONTENIDO ------------------------------->
+
+	<div class="container" id="head-vook">
+		<div class="row">
+			<div class="col-2 pt-2" id="rrss-icos">
+				<a href="https://www.vimeo.com" target="_blank"><img src="img/logo_vimeo.png" alt="logo vimeo" width="30" height="30"/></a>
+				<a href="https://www.instagram.com" target="_blank"><img src="img/logo_instagram.png" alt="logo instagram" width="30" height="30"/></a>
+			</div>
+			<div class="col-10 pt-2 pr-5 pl-5" id="user-panel">
+				<button type="button" class="btn btn-sm btn-outline-info float-right ml-2" data-toggle="modal" data-target="#modal-login">LOGIN</button>
+				<div class="modal fade" id="modal-login" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+
+							<!--  CABECERA  -->
+							<div class="modal-header">
+								<h4 class="modal-title">LOG IN</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<!--  CUERPO  -->
+							<div class="modal-body">
+								<form class="form-signin">
+									<div class="text-center mb-4">
+										<h1 class="h3 mb-3 font-weight-normal">Welcome Vook</h1>
+									</div>
+									
+									<label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+									<div class="input-group mb-2 mr-sm-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text">@</div>
+										</div>
+										<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+									</div>
+									<div class="form-label-group pb-2">
+										<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="checkbox mb-3">
+										<label><input type="checkbox" value="remember me"> Remember me</label>
+										<button class="btn btn-lg btn-info btn-block mt-2 mb-2" type="submit">Sign in</button>
+									</div>
+								</form>
+							</div>
+
+							<!--  PIE DE MODAL  -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-lg btn-warning btn-block mt-2 mb-2" data-dismiss="modal">Forgot password</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btn btn-sm btn-dark float-right" data-toggle="modal" data-target="#modal-register">REGISTER</button>
+				<div class="modal fade" id="modal-register">
+					<div class="modal-dialog">
+						<div class="modal-content">
+
+							<!--  CABECERA  -->
+
+							<div class="modal-header">
+								<h4 class="modal-title">REGISTER</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<!--  CUERPO  -->
+
+							<div class="modal-body">
+								<form class="form-signin">
+									<div class="text-center mb-4">
+										<h1 class="h3 mb-3 font-weight-normal">Create Account</h1>
+									</div>
+									<div class="form-label-group pb-2">
+										<input type="password" id="userName" class="form-control" placeholder="Name" required>
+									</div>
+									<label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+									<div class="input-group mb-2 mr-sm-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text">@</div>
+										</div>
+										<input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+									</div>
+									
+
+									<div class="form-label-group pb-2">
+										<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+									</div>
+									<div class="form-label-group pb-2">
+										<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-label-group pb-2">
+										<input type="password" id="inputPasswordConfirm" class="form-control" placeholder="Confirm Password" required>
+									</div>
+									
+									<div class="checkbox mb-3">
+										<label><input type="checkbox" value="remember me"> Email me about upcoming deals!</label>
+										<button class="btn btn-lg btn-info btn-block mt-2 mb-2" type="submit">Create Account</button>
+										<p>
+											By identifying you accept our <a href="#">Terms of use and sale.</a> See our <a href="#">Privacy Notice</a>, our <a href="#">Cookie Notice</a> and our <a href="#">Notice on advertising based on the interests of the user.</a></p>
+										</div>
+									</form>
+								</div>
+
+								<!--  PIE DE MODAL  -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-lg btn-white btn-outline-info btn-block mt-2 mb-2" data-dismiss="modal">Already have an account? Log in</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-2 pt-2 pb-2" id="vook_logo">
+					<a href="#"><img src="img/vook_logo.png" width="75" height="75"></a>		
+				</div>
+				<div class="col-10" id="user-panel">
+					<a id="account" href="account.html"><img src="img/account.png" alt="Account" width="68" height="68" class="float-right"></a>
+					<a id="shop-card" href="shop_card.html"><img src="img/shop_card.png" alt="Shop Card" width="68" height="68" class="float-right"></a>
+					<a id="shop-location" href="shop_location.html"><img src="img/shop_location.png" alt="Shop location" width="68" height="68" class="float-right"></a>
+				</div>
+			</div>	
+		</div>
+
+		<div class="container bg-info rounded-sm" id="menu_vook">
+			<div class="row">
+				<div class="col">
+					<nav class="navbar navbar-expand-md navbar-dark mb-2">
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="home">
+							<ul class="navbar-nav pt-2 pr-5 pl-5 mr-auto">
+								<li class="nav-item pr-5"><a href="index.html" class="nav-link text-white"><i class="fa fa-book"></i> HOME</a></li>
+								<li class="nav-item pr-5"><a href="about.html" class="nav-link text-white"><i class="fa fa-book"></i> ABOUT</a></li>
+								<li class="nav-item pr-5"><a href="contact.html" class="nav-link text-white"><i class="fa fa-book"></i></i> CONTACT</a></li>
+							</ul>
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 input-group mb-1 pt-2 float-right">
+								<input type="text" class="form-control mt-2" placeholder="Search">
+								<div class="input-group-append ml-1 mt-2">
+									<button class="btn btn-outline-info bg-white" type="submit">Go</button>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+		<!------------------------------- GALLERY ------------------------------->
+		
+		<div class="container mt-2 mb-5" id="vook_selection">
+			<div class="row">
+				<div class="col pt-5">
+					<h1 class="text-center">VOOK <i class="fas fa-play text-info" style="text-shadow:2px 2px 4px #000000"></i> GALLERY</a></h1>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container bg-info mt-5 pb-5 pr-5 pl-5 rounded-sm" id="vook_gallery">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+					<div class="card rounded-botton">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+						</div>
+
+						<div class="card-body bg-outline-info">
+							<h3 class="card-title">Vook 1</h3>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<button type="button" href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+						</div>		
+					</div>	
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+					<div class="card">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+						</div>
+
+						<div class="card-body bg-outline-info">
+							<h3 class="card-title">VOOK 2</h3>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<button type="button" href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+						</div>		
+					</div>	
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+					<div class="card">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+						</div>
+
+						<div class="card-body bg-outline-info">
+							<h3 class="card-title">VOOK 3</h3>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<button type="button" href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+						</div>		
+					</div>	
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+					<div class="card">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+						</div>
+
+						<div class="card-body bg-outline-info">
+							<h3 class="card-title">VOOK 4</h3>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<button type="button" href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+						</div>		
+					</div>	
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+					<div class="card">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+						</div>
+
+						<div class="card-body bg-outline-info">
+							<h3 class="card-title">VOOK 5</h3>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<button type="button" href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+						</div>		
+					</div>	
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+					<div class="card">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+						</div>
+
+						<div class="card-body bg-outline-info">
+							<h3 class="card-title">VOOK 6</h3>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<button type="button" href="#" class="btn btn-info btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+						</div>		
+					</div>	
+				</div>
+				<ul class="pagination pagination-md mx-auto pt-5">
+					<li class="page-item"><a href="#" class="page-link"> < PREV</a></li>
+					<li class="page-item active"><a href="#" class="page-link">1</a></li>
+					<li class="page-item"><a href="#" class="page-link">2</a></li>
+					<li class="page-item"><a href="#" class="page-link">3</a></li>
+					<li class="page-item"><a href="#" class="page-link">4</a></li>
+					<li class="page-item"><a href="#" class="page-link"> NEXT > </a></li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<!------------------------------- VOOK SELECTION ------------------------------->
+		<!--Controls-->
+
+		<div class="container mt-2 mb-5 h-100" id="vook_selection">
+			<div class="row">
+				<div class="col pt-5">
+					<h1 class="text-center">VOOK <i class="fas fa-heart text-danger"></i> SELECTION</a></h1>
+
+					<!--Carousel Wrapper-->
+					<div id="multi-item-example" class="carousel slide carousel-multi-item mt-5" data-ride="carousel">
+
+						<!--Controls-->
+						<div class="controls-top text-center pb-5">
+							<a class="btn-floating btn-outline-info waves-effect waves-light" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+							<a class="btn-floating btn-outline-info waves-effect waves-light" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+						</div>
+						<!--/.Controls-->
+
+
+						<!--Slides-->
+						<div class="carousel-inner" role="listbox">
+
+							<!--First slide-->
+							<div class="carousel-item active">
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 1</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+
+									<div class="col-md-4 clearfix d-none d-md-block">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 2</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+
+									<div class="col-md-4 clearfix d-none d-md-block">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 3</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--/.First slide-->
+
+							<!--Second slide-->
+							<div class="carousel-item">
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 4</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+
+									<div class="col-md-4 clearfix d-none d-md-block">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 5</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+
+									<div class="col-md-4 clearfix d-none d-md-block">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 6</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--/.Second slide-->
+
+							<!--Third slide-->
+							<div class="carousel-item">
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 7</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+
+									<div class="col-md-4 clearfix d-none d-md-block">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 8</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+
+									<div class="col-md-4 clearfix d-none d-md-block">
+										<div class="card mb-2">
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+											</div>
+											<div class="card-body bg-outline-info">
+												<h4 class="card-title">Vook 9</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<button type="button" href="#" class="btn btn-secondary btn-md"><span class="glyphicon glyphicon-book glyphicon-info"></span> Vook Detail</button>
+											</div>		
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--/.Third slide-->
+
+						</div>
+						<!--/.Slides-->
+
+						<!--Indicators-->
+						<ol class="carousel-indicators btn-info position-relative btn-sm">
+							<li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+							<li data-target="#multi-item-example" data-slide-to="1"></li>
+							<li data-target="#multi-item-example" data-slide-to="2"></li>
+						</ol>
+						<!--/.Indicators-->
+
+					</div>
+					<!--/.Carousel Wrapper-->
+
+				</div>
+			</div>
+		</div>
+
+		<!------------------------------- VOOK FILTER ------------------------------->
+
+		<div class="container bg-info mt-2 pb-5 pr-1 pl-1" id="vook_filter_gallery">
+			<div class="row">
+				<div class="col pt-5">
+					<h1 class="text-center text-white"> VOOK </span> FILTER SECTION</h1>
+					<div class="container mt-5" id="filter-selector">
+						<div class="col d-inline-block mt-5 m-auto">
+							<div class="card">
+								<article class="filter-group">
+									<header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside1" data-abc="true" aria-expanded="false" class="collapsed"> <i class="icon-control fa fa-chevron-down"></i>
+										<h6 class="title">Categories </h6>
+									</a> </header>
+									<div class="filter-content collapse" id="collapse_aside1" style="">
+										<div class="card-body">
+											<ul class="list-menu">
+												<li><a href="#" data-abc="true">Classic </a></li>
+												<li><a href="#" data-abc="true">Design </a></li>
+												<li><a href="#" data-abc="true">Fiction </a></li>
+												<li><a href="#" data-abc="true">Thrillers </a></li>
+												<li><a href="#" data-abc="true">Romance </a></li>
+											</ul>
+										</div>
+									</div>
+								</article>
+								<article class="filter-group">
+									<header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside2" data-abc="true" aria-expanded="false" class="collapsed"> <i class="icon-control fa fa-chevron-down"></i>
+										<h6 class="title">Author </h6>
+									</a> </header>
+									<div class="filter-content collapse" id="collapse_aside2" style="">
+										<div class="card-body">
+											<ul class="list-menu">
+												<li><a href="#" data-abc="true">Garth Williams </a></li>
+												<li><a href="#" data-abc="true">William Shakespeare </a></li>
+												<li><a href="#" data-abc="true">Marlo Morgan </a></li>
+												<li><a href="#" data-abc="true">Yann Martel </a></li>
+												<li><a href="#" data-abc="true">Robert Louis Stevenson </a></li>
+											</ul>
+										</div>
+									</div>
+								</article>
+							</div>
+
+						</div>
+						<div class="col-md-3 d-inline-block m-auto">
+							<div class="card mb-2">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+								</div>
+								<div class="card-body bg-outline-info">
+									<h4 class="card-title">Vook 10</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" href="#" class="btn btn-dark">DETAIL</button>
+								</div>		
+							</div>
+						</div>
+						<div class="col-md-3 d-inline-block m-auto">
+							<div class="card mb-2">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+								</div>
+								<div class="card-body bg-outline-info">
+									<h4 class="card-title">Vook 11</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" href="#" class="btn btn-dark">DETAIL</button>
+								</div>		
+							</div>
+						</div>
+						<div class="col-md-3 d-inline-block m-auto">
+							<div class="card mb-2">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+								</div>
+								<div class="card-body bg-outline-info">
+									<h4 class="card-title">Vook 12</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" href="#" class="btn btn-dark">DETAIL</button>
+								</div>		
+							</div>
+						</div>
+						<div class="col-md-3 d-inline-block m-auto">
+							<div class="card mb-2">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+								</div>
+								<div class="card-body bg-outline-info">
+									<h4 class="card-title">Vook 13</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" href="#" class="btn btn-dark">DETAIL</button>
+								</div>		
+							</div>
+						</div>
+						<div class="col-md-3 d-inline-block m-auto">
+							<div class="card mb-2">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/37660220"></iframe>
+								</div>
+								<div class="card-body bg-outline-info">
+									<h4 class="card-title">Vook 14</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" href="#" class="btn btn-dark">DETAIL</button>
+								</div>		
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<!------------------------------- FOOTER ------------------------------->
+
+
+		<footer class="bg-dark text-white p-5">
+			<div class="row">
+				<div class="col pt-2 float-left" id="vook-copyright">
+					<p>&#169; 2020 VOOK GALLERY</p>
+					Dev & Webdesign by <a id="webdesigner-footer" href="http://wwww.pistachedesign.com" class="text-center text-white">Pistache DESIGN <i class="fas fa-dragon" style="font-size:16px;"></i>
+					</a>
+				</div>
+				<div class="col pt-2 pr-5 pl-5 float-right text-right" id="rrss-icos">
+					<a href="https://www.vimeo.com" target="_blank"><img src="img/logo_vimeo.png" alt="logo vimeo" width="30" height="30"/></a>
+					<a href="https://www.instagram.com" target="_blank" class="pl-2"><img src="img/logo_instagram.png" alt="logo instagram" width="30" height="30"/></a>
+				</div>
+			</div>
+		</footer>
+
+
+		<!------------------------------- ACABA EL CONTENIDO ------------------------------->
+
+		<script src="js/jquery-3.4.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	</body>
+	</html>
